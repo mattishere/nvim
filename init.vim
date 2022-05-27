@@ -45,6 +45,7 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-lua/plenary.nvim'
 
+
 call plug#end()
 
 " Airline
@@ -68,6 +69,7 @@ nmap <C-n> :tabnew<CR>
 " Telescope
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 
+
 " Lua Configuration
 
 lua << EOF
@@ -80,8 +82,14 @@ local servers = {
 	'angularls',
 	'rust_analyzer',
 	'pyright',
-	'vimls'
+	'vimls',
+	'html',
+	'cssls',
+	'jsonls',
+	'dockerls',
+	'eslint',
 }
+
 local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
 local on_attach = function(client, bufnr)
 	local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
