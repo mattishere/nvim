@@ -37,6 +37,8 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-vsnip'
+Plug 'hrsh7th/vim-vsnip'
 
 Plug 'ryanoasis/vim-devicons'
 
@@ -69,6 +71,11 @@ nmap <C-n> :tabnew<CR>
 " Telescope
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 
+" UltiSnips 
+let g:UltiSnipsExpandTrigger='<tab>'
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsEditSplit="vertical"
 
 " Lua Configuration
 
@@ -107,6 +114,15 @@ for _, server in ipairs(servers) do
 	}
 end
 cmp.setup({
+	snippet = {
+		expand = function(args)
+			vim.fn["vsnip#anonymous"](args.body)
+		end,
+	},
+	window = {
+		completion = cmp.config.window.bordered(),
+		documentation = cmp.config.window.bordered(),
+	},
 	mapping = cmp.mapping.preset.insert({
 		['<C-b>'] = cmp.mapping.scroll_docs(-4),
 		['<C-f>'] = cmp.mapping.scroll_docs(4),
@@ -115,6 +131,7 @@ cmp.setup({
 	}),
 	sources = cmp.config.sources({
 		{ name = 'nvim_lsp' },
+		{ name = 'vsnip' },
 	}, {
 		{ name = 'buffer' },
 	})
