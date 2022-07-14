@@ -10,8 +10,6 @@ Note about the top screenshot: The background of the color theme (gruvbox) is st
 - A [Nerd Font](https://github.com/ryanoasis/nerd-fonts) font
 - **RUST LANGUAGE SERVER** [Rust Analyzer](https://github.com/rust-lang/rust-analyzer) (Partially optional, check the Lua section of the `init.vim` file and remove language servers as you wish from the `local servers`).
 - **LANGUAGE SERVERS** `npm i -g typescript typescript-language-server @angular/language-server pyright vim-language-server vscode-langservers-extracted dockerfile-language-server-nodejs emmet-ls` (Partially optional, check the Lua section of the `init.vim` file and remove language servers as you wish from the `local servers`).
-- [Haskell Language Server](https://github.com/haskell/haskell-language-server) (Partially optional, check the Lua section of the `init.vim` file and remove language servers as you wish from the `local servers`).
-- **LANGUAGE SERVERS** `npm i -g typescript typescript-language-server @angular/language-server pyright vim-language-server vscode-langservers-extracted dockerfile-language-server-nodejs emmet-ls` (Partially optional, check the Lua section of the `init.vim` file and remove language servers as you wish from the `local servers`).
 - I think that's it.. I have no clue about anything else!
 
 ## Installation
