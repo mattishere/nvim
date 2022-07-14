@@ -13,7 +13,7 @@ Note about the top screenshot: The background of the color theme (gruvbox) is st
 - **LANGUAGE SERVERS** `npm i -g typescript typescript-language-server @angular/language-server pyright vim-language-server vscode-langservers-extracted dockerfile-language-server-nodejs emmet-ls` (Partially optional, check the Lua section of the `init.vim` file and remove language servers as you wish from the `local servers`).
 =======
 - [Haskell Language Server](https://github.com/haskell/haskell-language-server) (Partially optional, check the Lua section of the `init.vim` file and remove language servers as you wish from the `local servers`).
-- **LANGUAGE SERVERS** `npm i -g typescript typescript-language-server @angular/launguage-server pyright vim-language-server vscode-langservers-extracted dockerfile-language-server-nodejs emmet-ls` (Partially optional, check the Lua section of the `init.vim` file and remove language servers as you wish from the `local servers`).
+- **LANGUAGE SERVERS** `npm i -g typescript typescript-language-server @angular/language-server pyright vim-language-server vscode-langservers-extracted dockerfile-language-server-nodejs emmet-ls` (Partially optional, check the Lua section of the `init.vim` file and remove language servers as you wish from the `local servers`).
 >>>>>>> 45b1450 (Added HLS, added a link to the NeoVim repo.)
 - I think that's it.. I have no clue about anything else!
 
