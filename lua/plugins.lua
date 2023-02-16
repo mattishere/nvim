@@ -14,7 +14,7 @@ return require('packer').startup(function(use)
 
     use 'preservim/nerdcommenter' -- Commenting
 
-    use 'preservim/nerdtree' -- File tree
+    use 'nvim-tree/nvim-tree.lua' -- File tree
 
     use 'jiangmiao/auto-pairs' -- Symbol pairing
 
@@ -26,9 +26,11 @@ return require('packer').startup(function(use)
 
     use 'neovim/nvim-lspconfig' -- LSP
 
-    use 'ryanoasis/vim-devicons' -- Nerd Font icons
+    use 'nvim-tree/nvim-web-devicons' -- Nerd Font icons
 
     use 'nvim-lua/plenary.nvim' -- Lua functions
+
+    use 'nvim-lua/popup.nvim'
 
     use 'nvim-telescope/telescope.nvim' -- File searching
 
@@ -38,4 +40,5 @@ return require('packer').startup(function(use)
 
     use 'nvim-treesitter/nvim-treesitter' -- Syntax highlighting
 
+    use 'j-hui/fidget.nvim' -- LSP Info
 end)

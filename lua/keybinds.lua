@@ -1,13 +1,12 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
--- Nerd Tree
-vim.keymap.set('n', '<C-space>', ':NERDTreeToggle<CR>')
+-- Nvim Tree
+vim.keymap.set('n', '<C-space>', ':NvimTreeToggle<CR>')
 
 -- Nerd Commenter
 vim.keymap.set('n', '<C-_>', '<Plug>NERDCommenterToggle<CR>')
 vim.keymap.set('v', '<C-_>', '<Plug>NERDCommenterToggle<CR>gv')
-
 
 vim.keymap.set('n', '<C-w>', ':bd<CR>') -- Close buffer
 vim.keymap.set('n', '<C-n>', ':tabnew<CR>') -- Open new buffer

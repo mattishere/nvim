@@ -13,8 +13,6 @@ vim.o.smartcase = true
 
 vim.o.swapfile = false
 vim.o.backup = false
-vim.o.undodir = 'undodir'
-vim.o.undofile = true
 
 vim.o.ma = true
 vim.o.mouse = 'a'
