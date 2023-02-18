@@ -20,9 +20,6 @@ vim.o.guicursor = 'n-v-c-i:block'
 vim.o.termguicolors = true
 vim.cmd[[colorscheme catppuccin]] -- Set theme to Catppuccin
 
--- Nerd Tree
-vim.g.NERDTreeMinimalUI = 1
-
 -- Ultisnips
 vim.g.UltiSnipsExpandTrigger = '<tab>'
 vim.g.UltiSnipsJumpForwardTrigger = '<c-b>'

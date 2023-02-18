@@ -9,6 +9,7 @@ require('settings.treesitter')
 require('settings.lualine')
 require('settings.bufferline')
 require('settings.nvimtree')
+require('settings.fidget')
 
 require('options')
 require('keybinds')

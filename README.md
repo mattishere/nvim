@@ -15,7 +15,7 @@
 |g+d       |LSP definition
 |K         |LSP hover 
 |Space+f   |LSP formatting
-|Space+e   |CMP (code suggestion) abort
+|Ctrl+e   |CMP (code suggestion) abort
 |Enter     |CMP (code suggestion) confirm
 |Ctrl+b    |CMP (code suggestion) documentation scroll (up)
 |Ctrl+f    |CMP (code suggestion) documentation scroll (down)
