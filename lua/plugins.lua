@@ -39,6 +39,4 @@ return require('packer').startup(function(use)
     use {'akinsho/bufferline.nvim', tag = 'v3.*', requires = 'ryanoasis/vim-devicons' } -- Buffers bar at the top
 
     use 'nvim-treesitter/nvim-treesitter' -- Syntax highlighting
-
-    use 'j-hui/fidget.nvim' -- LSP Info
 end)
