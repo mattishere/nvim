@@ -1,6 +1,11 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+-- General keybinds
+vim.keymap.set('n', '<esc><esc>', ':noh<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<F12>', ':term<CR>')
+
+
 -- Nvim Tree
 vim.keymap.set('n', '<C-space>', ':NvimTreeToggle<CR>')
 
@@ -8,8 +13,10 @@ vim.keymap.set('n', '<C-space>', ':NvimTreeToggle<CR>')
 vim.keymap.set('n', '<C-_>', '<Plug>NERDCommenterToggle<CR>')
 vim.keymap.set('v', '<C-_>', '<Plug>NERDCommenterToggle<CR>gv')
 
-vim.keymap.set('n', '<C-w>', ':bd<CR>') -- Close buffer
+-- Buffers
 vim.keymap.set('n', '<C-n>', ':tabnew<CR>') -- Open new buffer
+vim.keymap.set('n', '<tab>', ':BufferLineCycleNext<CR>') -- Cycling bufferline
+vim.keymap.set('n', '<S-tab>', ':BufferLineCyclePrev<CR>')
 
 -- Telescope
 vim.keymap.set('n', '<leader>ff', ':Telescope find_files<CR>') -- File finder

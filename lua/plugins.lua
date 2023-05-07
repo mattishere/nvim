@@ -10,7 +10,7 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim' -- Packer can manage itself
 
-    use 'catppuccin/nvim' -- Theme
+    use { 'catppuccin/nvim', as = "catppuccin" } -- Theme
 
     use 'preservim/nerdcommenter' -- Commenting
 
@@ -26,6 +26,13 @@ return require('packer').startup(function(use)
 
     use 'neovim/nvim-lspconfig' -- LSP
 
+    --use {
+        --'lewis6991/gitsigns.nvim',
+        --config = function()
+            --require('gitsigns').setup()
+        --end
+        --} -- Git
+
     use 'nvim-tree/nvim-web-devicons' -- Nerd Font icons
 
     use 'nvim-lua/plenary.nvim' -- Lua functions
@@ -37,6 +44,7 @@ return require('packer').startup(function(use)
     use 'nvim-lualine/lualine.nvim' -- Status bar
 
     use {'akinsho/bufferline.nvim', tag = 'v3.*', requires = 'ryanoasis/vim-devicons' } -- Buffers bar at the top
+    use 'moll/vim-bbye' -- Keeps the layout as it is after closing a buffer
 
     use 'nvim-treesitter/nvim-treesitter' -- Syntax highlighting
 end)
