@@ -41,9 +41,12 @@ return require('packer').startup(function(use)
 
     use 'nvim-telescope/telescope.nvim' -- File searching
 
-    use 'nvim-lualine/lualine.nvim' -- Status bar
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    } -- Status bar
 
-    use {'akinsho/bufferline.nvim', tag = 'v3.*', requires = 'ryanoasis/vim-devicons' } -- Buffers bar at the top
+    use {'akinsho/bufferline.nvim', tag = '*', requires = 'nvim-tree/nvim-web-devicons' } -- Buffers bar at the top
     use 'moll/vim-bbye' -- Keeps the layout as it is after closing a buffer
 
     use 'nvim-treesitter/nvim-treesitter' -- Syntax highlighting
